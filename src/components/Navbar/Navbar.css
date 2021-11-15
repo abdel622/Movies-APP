@@ -1,0 +1,64 @@
+h1.navbar-logo{
+    color: white;
+}
+
+.navbar.active h1.navbar-logo{
+    color: #232c4b;
+}
+.navbar{
+    width: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: all 0.3s ease-in-out;
+    z-index: 100;
+}
+
+.form-search{
+    justify-self: end;
+    margin-right: 15px;
+}
+
+form input{
+    padding: 10px 20px;
+    border-radius: 2px;
+    border: none;
+    outline: none;
+    background: rgba(60, 65, 88, 0.9);
+    color: #fff;
+}
+
+form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-submit-search{
+    background: none;
+    border: none;
+    padding: 0 10px;
+    cursor: pointer;
+}
+
+.navbar form ::placeholder {
+    color: #FFF8F0;
+}
+
+.navbar.active {
+    background: #FFF8F0;
+    /* color: black; */
+}
+
+.navbar.active form input{
+    background: transparent;
+    color: #232c4b;
+}
+
+.navbar.active form ::placeholder {
+    color: #232c4b;
+}

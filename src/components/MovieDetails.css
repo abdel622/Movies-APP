@@ -1,0 +1,102 @@
+body{
+    overflow-x: hidden;
+}
+.poster-img{
+    /* height: 85vh; */
+    height: 80vh;
+    /* margin: 0 auto; */
+
+}
+
+.flexcontainer-img{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: 100;
+}
+
+.flexcontainer-img::before{
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background:rgba(35, 41, 70, 0.6);
+    /* background:rgba(255,255,255,0.3); */
+    z-index: -10;
+}
+
+.flexcontainer-img::after{
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* background:rgba(35, 41, 70, 0.9); */
+    background:rgba(255,255,255,0.4);
+    z-index: -12;
+}
+
+.flexcontainer-img h1{
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.iframe-container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+  }
+  
+  /* Then style the iframe to fit in the container div with full height and width */
+  .responsive-iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+
+.movie-card{
+    color: #fff;
+}
+
+.movie-card .overview{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+}
+
+
+.overview-links{
+    align-self: flex-start;
+}
+
+.movie-card .overview p{
+    font-weight: 300;
+    color: rgb(207, 207, 207);
+}
+
+
+
+
+  @media screen and (max-width: 960px) {
+    body {
+      overflow-x: hidden;
+      overflow-y:scroll;
+    }
+  }
